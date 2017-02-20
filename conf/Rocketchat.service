@@ -14,6 +14,9 @@ Environment="BIND_IP=127.0.0.1"
 Environment="ROOT_URL=https://CHANGEMETOROOTURL"  
 Environment="PORT=3000"  
 Environment="MONGO_URL=mongodb://localhost:27017/rocketchat"
+Environment="ADMIN_USERNAME=admin"
+Environment="ADMIN_PASS=supersecret"
+Environment="ADMIN_EMAIL=admin@example.com"
 
 [Install]
 WantedBy=multi-user.target  
