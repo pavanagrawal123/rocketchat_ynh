@@ -63,7 +63,6 @@ sleep 25s
 
 cd $pkgdir
 
-sudo mongo < ../conf/rocketchat_ldap.js
 
 sudo yunohost app ssowatconf
 
