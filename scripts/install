@@ -22,9 +22,12 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org curl graphicsmagick
 sudo apt-get install -y npm
 sudo npm install -g n
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install 4.5
 
 # Meteor needs at least this version of node to work.
-sudo n 0.10.40
 curl https://install.meteor.com/ | sh
 
 sed -i "s@ALIASTOCHANGE@$final_path/@g" ../conf/nginx.conf*
