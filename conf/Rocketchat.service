@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple  
-WorkingDirectory=/var/www/rocketchat/Rocket.chat
+WorkingDirectory=/var/www/rocketchat/Rocket.Chat
 User=www-data  
 Group=www-data
 ExecStart=/usr/local/bin/node main.js  
